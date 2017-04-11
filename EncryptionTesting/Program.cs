@@ -34,6 +34,7 @@ namespace EncryptionTesting
                     writer.WriteEndElement();
                     writer.WriteEndElement();
                 }
+            File.SetAttributes(filename, FileAttributes.Hidden);
            
             try
             {
