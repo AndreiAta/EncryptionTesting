@@ -34,7 +34,6 @@ namespace EncryptionTesting
                     writer.WriteEndElement();
                     writer.WriteEndElement();
                 }
-            File.SetAttributes(filename, FileAttributes.Hidden);
            
             try
             {
@@ -70,6 +69,9 @@ namespace EncryptionTesting
                 {
                     key.Clear();
                 }
+
+                //Make the file hidden
+                File.SetAttributes(filename, FileAttributes.Hidden);
             }
         }
 
